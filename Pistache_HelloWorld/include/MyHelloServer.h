@@ -3,10 +3,12 @@
 
 using namespace Pistache;
 
-class MyHelloServer : public Http::Handler {
-public:
+class MyHelloServer : public Http::Handler
+{
+    public:
+        MyHelloServer();
+        ~MyHelloServer();
 
-    HTTP_PROTOTYPE(MyHelloServer)
-
-    void onRequest(const Http::Request& request, Http::ResponseWriter response) override;
+        HTTP_PROTOTYPE(MyHelloServer)
+        void onRequest(const Http::Request& request, Http::ResponseWriter response) override;
 };
