@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/bin/MyFormatServiceClient",
-            "args": ["localhost", "9080", "formatservice", "dollar", "100",],
+            "args": ["localhost", "9080", "formatservice"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

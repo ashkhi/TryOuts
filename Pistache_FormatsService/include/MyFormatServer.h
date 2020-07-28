@@ -11,4 +11,5 @@ class MyFormatServer : public Http::Handler
 
         HTTP_PROTOTYPE(MyFormatServer)
         void onRequest(const Http::Request& request, Http::ResponseWriter response) override;
+        void removeChar(std::string & str, int c);
 };
