@@ -25,11 +25,7 @@ void MyFormatServer::onRequest(const Http::Request& request, Http::ResponseWrite
     if(request.resource() == "/formatservice")
     {
         std::string jsonReqBody = request.body();
-        /*char json[jsonReqBody.length()];
-        for(auto i = 0; i < sizeof(json); ++i)
-        {
-            json[i] = jsonReqBody[i];
-        }*/
+        
         //const char* json = "{\"format\":\"dollar\",\"value\":\"123\",\"formattedValue\":\"\"}";
         Document formatServiceInput;
         formatServiceInput.Parse(jsonReqBody.c_str());
