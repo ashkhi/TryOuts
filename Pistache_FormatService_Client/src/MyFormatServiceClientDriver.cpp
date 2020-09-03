@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
     auto opts = Http::Client::options().threads(1).maxConnectionsPerHost(1);
     client.init(opts);
 
-	std::ifstream file ("./resource/formatServiceInput.json");
+	std::ifstream file ("../resource/formatServiceInput.json");
 	if(!file)
 	{
 		std::cout << "unable to access json input" << std::endl;
